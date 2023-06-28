@@ -28,13 +28,6 @@ public class PanneauPrincipal extends JPanel {
         this.repaint();
     }
 
-
-    // Variables temporaires de la demonstration:
-    //private Point position = new Point(0,0);
-    //private Point vitesse = new Point(1,1);
-    //private int taille = 32;
-    //String path = metadoneesList.get(0).getIcone().get("usine-matiere");
-
     @Override
     public void paint(Graphics g) {
         super.paint(g);
