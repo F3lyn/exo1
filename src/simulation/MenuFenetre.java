@@ -45,7 +45,7 @@ public class MenuFenetre extends JMenuBar {
 			JFileChooser fileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
 
 			fileChooser.setAcceptAllFileFilterUsed(false);
-			// Créer un filtre
+			// Creer un filtre
 			FileNameExtensionFilter filtre = new FileNameExtensionFilter(".xml", "xml");
 			fileChooser.addChoosableFileFilter(filtre);
 
@@ -79,8 +79,8 @@ public class MenuFenetre extends JMenuBar {
 		menuSimulation.add(menuChoisir);
 
 		menuChoisir.addActionListener((ActionEvent e) -> {
-			// Ouvrir la fenêtre de sélection
-			// TODO - Récupérer la bonne stratégie de vente
+			// Ouvrir la fenetre de selection
+			// TODO - Recuperer la bonne strategie de vente
 			new FenetreStrategie();
 		});
 		add(menuSimulation);
@@ -88,7 +88,7 @@ public class MenuFenetre extends JMenuBar {
 	}
 
 	/**
-	 * Créer le menu Aide
+	 * Creer le menu Aide
 	 */
 	private void ajouterMenuAide() {
 		JMenu menuAide = new JMenu(MENU_AIDE_TITRE);
