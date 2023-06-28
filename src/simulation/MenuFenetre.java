@@ -24,7 +24,7 @@ public class MenuFenetre extends JMenuBar {
 	private static final String MENU_SIMULATION_TITRE = "Simulation";
 	private static final String MENU_SIMULATION_CHOISIR = "Choisir";
 	private static final String MENU_AIDE_TITRE = "Aide";
-	private static final String MENU_AIDE_PROPOS = "À propos de...";
+	private static final String MENU_AIDE_PROPOS = "A propos de...";
 
 	public MenuFenetre() {
 		ajouterMenuFichier();
@@ -33,7 +33,7 @@ public class MenuFenetre extends JMenuBar {
 	}
 
 	/**
-	 * Créer le menu de Fichier
+	 * Creer le menu de Fichier
 	 */
 	private void ajouterMenuFichier() {
 
@@ -52,7 +52,7 @@ public class MenuFenetre extends JMenuBar {
 			int returnValue = fileChooser.showOpenDialog(null);
 
 			if (returnValue == JFileChooser.APPROVE_OPTION) {
-				// TODO - Parser le fichier XML sélectionné
+				// TODO - Parser le fichier XML
 				File selectedFile = fileChooser.getSelectedFile();
 				XMLParser xmlParse = new XMLParser(selectedFile);
 				xmlParse.parse();
@@ -71,7 +71,7 @@ public class MenuFenetre extends JMenuBar {
 	}
 
 	/**
-	 * Créer le menu de Simulation
+	 * Creer le menu de Simulation
 	 */
 	private void ajouterMenuSimulation() {
 		JMenu menuSimulation = new JMenu(MENU_SIMULATION_TITRE);
